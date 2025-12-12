@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <style>
+        body{
+            background-image: url("https://img.freepik.com/premium-photo/pencil-checking-off-golden-todo-list-with-copy-space-dark-background_671359-98.jpg");
+            background-repeat: repeat; /* repeat the image */
+            background-size: 30% 50%;  /* width = 30% of container, height = 50% of container */
+            background-position: top left; /* start from top left */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+                
+        }
+        .center{
+            text-align: center;
+            margin-top: 50px;
+            border: 1px solid black;
+            background-color: rgb(255, 201, 180);
+            border-radius: 20px;
+            box-shadow: 10px 10px 5px grey;
+            width: 500px;
+            padding-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            min-height: 20vh;
+        }
+        input{
+            border-radius:80px;
+            height: 30px;
+            width: 250px;
+            text-align: left;
+            padding-left: 15px;
+            margin-left: 10px;;
+        }
+        .addbtn{             
+            border-radius: 10px;
+            height: 30px;
+            width: 100px;
+            background-color: rgb(0, 238, 0);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            box-shadow: 5px 5px 5px grey;
+            margin-left: 10px;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        li{
+            padding: 8px;
+            margin-bottom: 5px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            text-align: left;
+        }
+        .logout{
+            border-radius: 50px;
+            height: 30px;
+            width: 100px;
+            background-color: rgb(255, 165, 47);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            box-shadow: 5px 5px 5px grey;
+            margin-top: 20px;
+            margin-left: auto;
+            display: block;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        #usernameDisplay{
+            position: fixed;
+            border-radius: 50px;
+            top: 10px;
+            right: 10px;
+            background-color: yellow;
+            padding: 15px 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>My Todo List</h1>
+        <input type="text" id="myInput" placeholder="Title...">
+        <button type="button" class="addbtn" onclick="newElement()">Add</button>
+        <ul id="mytasks"> </ul>
+
+        <p id="text"></p>
+    </div>
+
+    <span id="usernameDisplay"></span>
+    <button class="logout" onclick="logout()">Log out</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
