@@ -28,11 +28,20 @@ The interface is **responsive**, with the login form centered on desktop and sta
 ---
 
 ## Folder Structure
-login-with-todo/
-├─ index.html ← main login page
-├─ register.html ← registration page
+Todo-with-login/
+├─ login.html ← main login page
+├─ createacc.html ← registration page
 ├─ todo.html ← todo list page
 ├─ script.js ← all JS logic for login/register/todo
 ├─ style.css ← optional CSS file (if used)
 └─ README.md ← project description
 
+---
+
+## GitHub Repository
+You can view or clone this project from my GitHub repository:  
+[Login with Todo App](https://github.com/srijana-bhowmik/Todo-with-login)
+
+To clone:  
+```bash
+git clone https://github.com/srijana-bhowmik/Todo-with-login.git
